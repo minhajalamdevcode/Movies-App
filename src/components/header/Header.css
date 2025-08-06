@@ -20,11 +20,12 @@ a > span{
 }
 
 a > span:hover {
-    color: red;
+    color: #24bad5;
 }
 
 .header__icon {
-    width: 80px;
+    width: 140px;
+    height: 40px;
     cursor: pointer;
 }
 

@@ -46,13 +46,20 @@
 .movie__detailRightTop > div{
     text-shadow: 0px 0px 5px #000000;
     margin-bottom: .5rem;
+    
 }
 
 .movie__name {
     font-weight: 600;
     font-size: 3rem;
 }
+.movie__tagline{
+    font-size: 1.3rem;
+}
 
+.fa-star{
+    color: #f5c713;
+}
 .movie__voteCount {
     margin-left: 1rem;
 }
@@ -66,12 +73,18 @@
     border: 2px solid white;
     border-radius: 20px;
     margin-right: 1rem;
+    transition: 1s all;
+    
 }
-
+.movie__genre:hover {
+    background-color: #24bad5;
+    cursor: pointer;
+}
 
 .movie__detailRightBottom {
     margin: 2rem 0;
     flex: 0.8;
+    line-height: 1.6;
 }
 
 .synopsisText {
@@ -108,15 +121,29 @@
     width: 150px;
     color: black;
     font-weight: bold;
+    transition: 1s all;
 }
 
 .movie__homeButton {
-    background-color:rgb(255, 0, 0);
+   background-color: white;
     
+}
+.movie__homeButton:hover {
+    background-color: #24bad5;
+    color: white;
 }
 
 .movie__imdbButton {
     background-color:#f3ce13;
+}
+.movie__imdbButton {
+    background-color:white;
+    transition: 1s all;
+}
+
+.movie__imdbButton:hover {
+    background-color: #f3ce13;
+    color: white;
 }
 
 .newTab {

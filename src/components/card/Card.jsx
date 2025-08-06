@@ -41,7 +41,7 @@ const Cards = ({ movie }) => {
                                 {movie.release_date}
                                 <span className="card__rating">
                                     {movie.vote_average}
-                                    <i className="fas fa-star" />
+                                    <i className="fas fa-star card-star-color" />
                                 </span>
                             </div>
                             <div className="card__description">

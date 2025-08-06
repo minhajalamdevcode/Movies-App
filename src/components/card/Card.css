@@ -54,9 +54,14 @@
 .card__rating {
     float: right;
 }
+.card-star-color{
+    color:#f5c713;
+    margin-left: 0.25rem;
+}
 
 .card__description {
-    font-style: italic;
+    font-style: normal;
     font-size: .75rem;
     margin-bottom: 0.25rem;
+    line-height: 1.2;
 }

@@ -51,14 +51,14 @@ const Movie = () => {
                         </div>
                     </div>
                     <div className="movie__detailRightBottom">
-                        <div className="synopsisText">Synopsis</div>
+                        <div className="synopsisText" style={{color: "#24bad5", fontSize: "2.2rem"}}>Synopsis</div>
                         <div>{currentMovieDetail ? currentMovieDetail.overview : ""}</div>
                     </div>
                     
                 </div>
             </div>
             <div className="movie__links">
-                <div className="movie__heading">Useful Links</div>
+                <div className="movie__heading"style={{color: "#24bad5"}}>Useful Links</div>
                 {
                     currentMovieDetail && currentMovieDetail.homepage && <a href={currentMovieDetail.homepage} target="_blank" style={{textDecoration: "none"}}><p><span className="movie__homeButton movie__Button">Homepage <i className="newTab fas fa-external-link-alt"></i></span></p></a>
                 }
