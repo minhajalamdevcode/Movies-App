@@ -1,5 +1,5 @@
 .posterImage{
-    height: 600px;
+    height: 700px;
 }
 
 .posterImage > img {
@@ -56,4 +56,43 @@
     text-align: left;
     width: 50%;
     line-height: 1.5;
+}
+@media (max-width: 768px) {
+     .posterImage {
+        height: 300px;
+        position: relative; 
+    }
+
+    .posterImage__overlay {
+        position: absolute; 
+        padding: 2.5rem;
+        height: 100%;
+        bottom: 0;
+    }
+    
+
+    .posterImage__title {
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .posterImage__runtime {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .posterImage__rating {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .posterImage__description {
+        font-size: 0.9rem;
+        width: 65%;
+        line-height: 1.3;
+        
+    }
+    .carousel .control-dots {
+        display: none;
+    }
 }

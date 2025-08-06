@@ -1,25 +1,36 @@
 .header {
-    margin: 0 2.5rem;
-    padding: .5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1000;
+    margin: 0;
+    padding: .5rem 2rem;
     align-items: center;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.headerLeft, .headerRight {
+.headerLeft {
     display: flex;
     align-items: center;
-
 }
 
-a > span{
-    margin: 0 30px;
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navLinks a > span {
+    margin: 0 20px;
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
-a > span:hover {
+.navLinks a > span:hover {
     color: #24bad5;
 }
 
@@ -29,7 +40,52 @@ a > span:hover {
     cursor: pointer;
 }
 
-.user__avatar {
+.mobileMenuIcon {
+    display: none;
     font-size: 2rem;
+    color:  #24bad5;
+    cursor: pointer;
 }
 
+.mobileMenu {
+    position: absolute;
+    top: 60px;
+    /* left: 0; */
+    right: 0;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    height: 100vh;
+    width: 80%;
+}
+
+.mobileMenu a {
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.mobileMenu a > span {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.mobileMenu a > span:hover {
+    color: #24bad5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .mobileMenuIcon {
+        display: block;
+    }
+
+    .header {
+        padding: 0.5rem 1rem;
+    }
+}

@@ -7,10 +7,13 @@ font-size: 1.75rem;
 text-align: center;
 margin:  2.5rem;
 color: #24bad5;
+padding-top: 40px;
+
 }
 
 .list__cards {
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
-}
+} 
+
